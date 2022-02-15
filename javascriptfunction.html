@@ -1,0 +1,42 @@
+
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		
+	
+		#textbox{
+			width: 300px;
+			height: 100px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+<center>Hello house!
+
+	<div id='textbox'></div>
+</center>
+
+
+	<script type="text/javascript">
+
+		var random = Math.round(Math.random()*7)
+		
+		var house = ["liv", "jhansi", "slick", "pearson", "molly", "jhansi", "vivi", "payton"];
+
+		function sayHello (){
+
+			textbox.innerText = "hi " + house[random] + "!";
+
+		}
+
+		sayHello();
+
+	</script>
+
+</body>
+</html> 

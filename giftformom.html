@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		function makeImage (x) {
+
+		var image = document.createElement("div")
+		document.body.appendChild(image);
+		
+		image.style.backgroundImage= "url("+x+".jpg)";
+		image.style.height = "200px";
+		image.style.width = "200px";
+		image.style.backgroundSize = "cover";
+		image.style.display = "inline-block";
+		image.style.margin = "3px";
+		image.style.backgroundPosition = "center";
+		image.style.transition = ".5s";
+
+
+
+		image.addEventListener("click", function(){
+		image.style.width ="300px";
+			image.style.height ="300px";	
+		})
+			
+
+
+		};
+
+		
+
+		
+		
+
+		for (var i=1; i<33; i=i+1) {
+			makeImage(i)
+		}
+
+		
+	</script>
+
+
+</body>
+</html>

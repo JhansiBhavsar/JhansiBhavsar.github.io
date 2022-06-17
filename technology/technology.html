@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome</title>
+
+<style type="text/css" media="screen">
+
+div {
+	position: relative;
+	width: 90%;
+	height: 90%;
+}
+
+
+#obj1 {
+  position: absolute;
+  width: 200px;
+	top: 100px;
+	left: 20px;
+}
+
+#obj2 {
+  position: absolute;
+  width: 200px;
+	top: 100px;
+	left: 420px;
+}
+
+#obj3 {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 20px;
+}
+
+#obj4 {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 420px;
+}
+
+#obj5 {
+  position: absolute;
+  width: 200px;
+  top: 700px;
+  left: 20px;
+}
+
+#obj6 {
+  position: absolute;
+  width: 200px;
+  top: 700px;
+  left: 420px;
+}
+
+#overlay1 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay3 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay4 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay5 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay6 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+h2 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 25px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
+
+h3,a:link,a:visited { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 15px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
+
+a:link:active,a:visited:active, a:hover { color: #53E6E1; font-family: 'Helvetica Neue', sans-serif; font-size: 15px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="main">
+	<div id="overlay1" onclick="off1()">
+  		<div id="text">Technology can cause headaches because of the strain that looking at a screen places on one's eyes.<br><br>
+        <img src="eye1.jpg" width="300px" >
+      </div>
+	</div>
+
+	<div id="overlay2" onclick="off2()">
+  		<div id="text">Neck Tension<br><br>
+      <img src="neck2.jpg" width="300px"> 
+	    </div>
+  </div>
+
+  <div id="overlay3" onclick="off3()">
+      <div id="text">Text<br><br>
+      <img src="brain.png" width="300px">
+      </div>
+  </div>
+
+  <div id="overlay4" onclick="off4()">
+      <div id="text">Text<br><br>
+      <img src="blurry.jpg" width="300px">
+      </div>
+  </div>
+
+<div id="overlay5" onclick="off5()">
+      <div id="text">Blue Light<br><br>
+      <img src="bluelight2.jpg" width="400px">
+      </div>
+  </div>
+
+  <div id="overlay6" onclick="off6()">
+      <div id="text">Text<br><br>
+      <img src="happy.jpg" width="300px">
+      </div>
+  </div>
+
+	<div style="padding:20px">
+  		<h2>My Appreciation Page</h2>
+  		<img id="obj1" src="eyes.jpg" onclick="on1()">
+		  <img id="obj2" src="neck1.png" onclick="on2()">
+      <img id="obj3" src="headache1.jpg" onclick="on3()">
+      <img id="obj4" src="blurryletters.jpg" onclick="on4()">
+      <img id="obj5" src="bluelight.jpg" onclick="on5()">
+      <img id="obj6" src="beach.jpg" onclick="on6()">
+
+	</div>
+	
+	
+
+</div>
+
+<script>
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
+}
+
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+
+function on4() {
+  document.getElementById("overlay4").style.display = "block";
+}
+
+function off4() {
+  document.getElementById("overlay4").style.display = "none";
+}
+
+function on5() {
+  document.getElementById("overlay5").style.display = "block";
+}
+
+function off5() {
+  document.getElementById("overlay5").style.display = "none";
+}
+
+function on6() {
+  document.getElementById("overlay6").style.display = "block";
+}
+
+function off6() {
+  document.getElementById("overlay6").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
